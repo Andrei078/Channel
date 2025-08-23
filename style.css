@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #000000, #1a0000, #000000);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left {
+  flex: 2;
+  text-align: center;
+}
+
+.left h1 {
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff3333;
+  margin-bottom: 20px;
+}
+
+.neon-box {
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 20px #ff0000, 0 0 25px #ff3333;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 1000px
+}
+
+.video {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff3333;
+}
+
+.subs {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.comment {
+  font-size: 0.9em;
+  color: #ffcccc;
+  font-style: italic;
+}
+
+.subscribe-btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+  background: #ddd;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid red;
+}
+
+footer a {
+  margin: 0 15px;
+  color: red;
+  font-size: 26px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ff6666;
+}
+
+.comments {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background: rgba(255,0,0,0.1);
+  border-radius: 8px;
+}
+
+.comment-item {
+  margin-bottom: 12px;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,0,0,0.4);
+}

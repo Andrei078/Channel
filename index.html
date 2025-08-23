@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrei 07 - YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Coloana stângă -->
+    <div class="left neon-box">
+      <h1>Andrei 07</h1>
+      <div id="latestVideo" class="video"></div>
+      <div id="commentsBox" class="comments"></div>
+    </div>
+
+    <!-- Coloana dreaptă -->
+    <div class="right">
+      <div class="profile">
+        <img id="avatar" class="avatar" src="" alt="Avatar canal">
+        <div>
+          <div class="subs" id="subs">Loading...</div>
+          <div class="comment">💬 Bine ai venit pe canal!</div>
+        </div>
+      </div>
+      <a class="subscribe-btn" target="_blank" href="https://www.youtube.com/@Andrei07?sub_confirmation=1">
+        Subscribe
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://instagram.com/" target="_blank" title="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" viewBox="0 0 24 24"><path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 2C5.95 4 4 5.95 4 7.75v8.5C4 18.05 5.95 20 7.75 20h8.5c1.8 0 3.75-1.95 3.75-3.75v-8.5C20 5.95 18.05 4 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm5.25-2.45a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0z"/></svg>
+    </a>
+    <a href="https://discord.com/" target="_blank" title="Discord">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" viewBox="0 0 24 24"><path d="M20 0a20 20 0 0 0-5 1 15 15 0 0 0-6 0A20 20 0 0 0 4 0a19 19 0 0 0-4 17 20 20 0 0 0 6 3 12 12 0 0 0 1-2 13 13 0 0 1-2-1 16 16 0 0 0 13 0 13 13 0 0 1-2 1 12 12 0 0 0 1 2 20 20 0 0 0 6-3A19 19 0 0 0 20 0zM8 14c-1.1 0-2-1-2-2s.9-2 2-2c1 0 2 1 2 2s-1 2-2 2zm8 0c-1.1 0-2-1-2-2s.9-2 2-2c1 0 2 1 2 2s-1 2-2 2z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@Andrei07" target="_blank" title="YouTube">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.2-2.2C19 3.5 12 3.5 12 3.5s-7 0-9.3.5a3 3 0 0 0-2.2 2.2A31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.2 2.2C5 20.5 12 20.5 12 20.5s7 0 9.3-.5a3 3 0 0 0 2.2-2.2A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.75 15.02v-6.04L15.5 12l-5.75 3.02z"/></svg>
+    </a>
+  </footer>
+
+  <!-- Google API -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
