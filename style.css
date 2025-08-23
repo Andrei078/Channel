@@ -16,6 +16,20 @@ body {
   100% { background-position: 50% 0%; }
 }
 
+/* Pentru ecrane mici (ex. telefon) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* toate coloanele una sub alta */
+    align-items: center;    /* centrat pe mijloc */
+  }
+
+  .left, .right {
+    flex: unset;            /* elimină proporțiile flex desktop */
+    width: 90%;             /* ocupă aproape tot ecranul */
+    margin-bottom: 20px;
+  }
+}
+
 .container {
   flex: 1;
   display: flex;
@@ -113,5 +127,6 @@ footer a {
 footer a:hover {
   color: #ff6666;
 }
+
 
 
