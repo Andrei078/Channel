@@ -17,7 +17,7 @@ body {
 }
 
 /* Pentru ecrane mici (ex. telefon) */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column; /* toate coloanele una sub alta */
     align-items: center;    /* centrat pe mijloc */
@@ -126,6 +126,7 @@ footer a {
 footer a:hover {
   color: #ff6666;
 }
+
 
 
 
