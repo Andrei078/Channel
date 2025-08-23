@@ -58,16 +58,16 @@ body {
   padding: 20px;
   max-width: 1000px;
 }
-
-.video {
-  width: 100%;
-  max-width: 720px;
-  aspect-ratio: 16/9;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
+@media (max-width: 768px) {
+   .video {
+   width: 100%;
+   max-width: 720px;
+   aspect-ratio: 16/9;
+   margin: 0 auto;
+   border-radius: 8px;
+   overflow: hidden;
+ }
 }
-
 .right {
   flex: 1;
   text-align: center;
@@ -127,6 +127,7 @@ footer a {
 footer a:hover {
   color: #ff6666;
 }
+
 
 
 
