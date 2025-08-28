@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg, #000000, #1a0000, #000000);
   background-size: 400% 400%;
-  animation: gradientShift 12s ease infinite;
+  animation: gradientShift 5s ease infinite;
   color: #fff;
   display: flex;
   min-height: 100vh;
@@ -148,6 +148,7 @@ footer a:hover {
   height: 20px;
   fill: red;
 }
+
 
 
 
