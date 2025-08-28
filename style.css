@@ -128,6 +128,28 @@ footer a:hover {
 }
 
 
+.video-stats {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 1em;
+  color: #fff;
+}
+
+.video-stats div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.video-stats svg {
+  width: 20px;
+  height: 20px;
+  fill: red;
+}
+
+
 
 
 
