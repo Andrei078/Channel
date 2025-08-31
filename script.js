@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyDDr2IULXRASrgrLXxg4h90MnwktwlyLXA";
+const API_KEY = "AIzaSyDewiiHYIDNU8z-CQrF6_xru8bxbF0uNvY";
 const CHANNEL_ID = "UCITHC5fLQJy8ufLyd78D7SA";
 const CLIENT_ID = "367641338219-drc4p01a2tdq6k4mfae6dfhh1j8pohug.apps.googleusercontent.com";
 
@@ -74,6 +74,7 @@ async function loadLatestVideo() {
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
   }
 }
+
 
 
 
