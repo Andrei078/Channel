@@ -6,8 +6,8 @@ body {
   animation: gradientShift 5s ease infinite;
   color: #fff;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 @keyframes gradientShift {
@@ -16,39 +16,12 @@ body {
   100% { background-position: 50% 0%; }
 }
 
-/* Pentru ecrane mici (ex. telefon) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* toate coloanele una sub alta */
-    align-items: center;    /* centrat pe mijloc */
-  }
-
-  .left, .right {
-    flex: unset;            /* elimină proporțiile flex desktop */
-    width: 90%;             /* ocupă aproape tot ecranul */
-    margin-bottom: 20px;
-  }
-}
-
 .container {
-  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
   padding: 20px;
-}
-
-.left {
-  flex: 2;
-  text-align: center;
-}
-
-.left h1 {
-  color: #ff0000;
-  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff3333;
-  margin-bottom: 20px;
 }
 
 .neon-box {
@@ -57,19 +30,48 @@ body {
   border-radius: 25px;
   padding: 20px;
   max-width: 850px;
-}
-  .video {
-   width: 100%;
-   max-width: 720px;
-   aspect-ratio: 16/9;
-   margin: 0 auto;
-   border-radius: 8px;
-   overflow: hidden;
- }
-
-.right {
-  flex: 1;
+  width: 100%;
   text-align: center;
+}
+
+.neon-boxab {
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 20px #ff0000, 0 0 25px #ff3333;
+  border-radius: 25px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.video {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-stats {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 1em;
+  color: #fff;
+}
+
+.video-stats div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.video-stats svg {
+  width: 20px;
+  height: 20px;
+  fill: red;
 }
 
 .profile {
@@ -77,6 +79,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  top: center;
   margin-bottom: 15px;
 }
 
@@ -127,27 +130,6 @@ footer a:hover {
   color: #ff6666;
 }
 
-
-.video-stats {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  font-size: 1em;
-  color: #fff;
-}
-
-.video-stats div {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.video-stats svg {
-  width: 20px;
-  height: 20px;
-  fill: red;
-}
 
 
 
