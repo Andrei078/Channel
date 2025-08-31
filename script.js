@@ -22,15 +22,24 @@ async function loadLatestVideo() {
   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet&order=date&maxResults=1`;
   const res = await fetch(url);
   const data = await res.json();
-  const video = data.items.find(item => item.id.videoId);
-  if (video) {
-    const videoId = video.id.videoId;
-    document.getElementById("latestVideo").innerHTML =
-      `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
-  } else {
+
+  if (!data.items || data.items.length === 0) {
+    console.error("Nu s-au găsit videoclipuri sau API Key-ul nu funcționează.", data);
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
+    return;
   }
+
+  const video = data.items.find(item => item.id.videoId);
+  if (!video) {
+    document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
+    return;
+  }
+
+  const videoId = video.id.videoId;
+  document.getElementById("latestVideo").innerHTML =
+    `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
 }
+
 
 loadChannelData();
 loadLatestVideo();
@@ -80,6 +89,7 @@ async function loadLatestVideo() {
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
   }
 }
+
 
 
 
