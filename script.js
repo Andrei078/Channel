@@ -6,11 +6,17 @@ async function loadChannelData() {
   const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id=${CHANNEL_ID}&key=${API_KEY}`;
   const res = await fetch(url);
   const data = await res.json();
-  const channel = data.items[0];
 
+  if (!data.items || data.items.length === 0) {
+    console.error("Nu s-au găsit date pentru canal sau API Key-ul nu funcționează.");
+    return;
+  }
+
+  const channel = data.items[0];
   document.getElementById("subs").innerText = channel.statistics.subscriberCount + " abonați";
   document.getElementById("avatar").src = channel.snippet.thumbnails.high.url;
 }
+
 
 async function loadLatestVideo() {
   const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet&order=date&maxResults=1`;
@@ -74,6 +80,7 @@ async function loadLatestVideo() {
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
   }
 }
+
 
 
 
