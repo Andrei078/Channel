@@ -74,3 +74,4 @@ async function loadLatestVideo() {
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
   }
 }
+
