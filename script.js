@@ -1,6 +1,6 @@
-const API_KEY = "AIzaSyDoRAYTU4nqOhUcHjCRsMx23DkH82kAhf8";
+const API_KEY = "AIzaSyDDr2IULXRASrgrLXxg4h90MnwktwlyLXA";
 const CHANNEL_ID = "UCITHC5fLQJy8ufLyd78D7SA";
-const CLIENT_ID = "367641338219-nsvnfq0a34f9flgolsd6rtst2bg0usc2.apps.googleusercontent.com";
+const CLIENT_ID = "367641338219-drc4p01a2tdq6k4mfae6dfhh1j8pohug.apps.googleusercontent.com";
 
 async function loadChannelData() {
   const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics,snippet&id=${CHANNEL_ID}&key=${API_KEY}`;
@@ -74,4 +74,5 @@ async function loadLatestVideo() {
     document.getElementById("latestVideo").innerHTML = "Nu există videoclipuri disponibile.";
   }
 }
+
 
